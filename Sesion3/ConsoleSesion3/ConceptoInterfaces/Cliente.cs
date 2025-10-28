@@ -7,5 +7,8 @@ public sealed class Cliente:IContacto
     public string Correo { get; set; }
 
     public string Telefono { get; set; }
-    
+    public string NombreCompleto()
+    {
+        return $"{Nombre}  {Apellido}";
+    }
 }

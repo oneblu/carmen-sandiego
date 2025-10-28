@@ -6,4 +6,9 @@ public class Proveedor:IContacto
     public string Apellido { get; set; }
     public string Correo { get; set; }
     public string Telefono { get; set; }
+    
+    public string NombreCompleto()
+    {
+        return $"{Nombre}  {Apellido}";
+    }
 }

@@ -1,9 +1,9 @@
-using ConsoleSesion3.ConceptoInterfaces.Database;
-
-namespace ConsoleSesion3.ConceptoInterfaces;
+namespace ConsoleSesion3.ConceptoInterfaces.Database;
 
 public class DbContacto: IDbContacto
 {
+    public string ConexionDb { get; set; }
+
     public bool CrearCliente(IContacto contacto)
     {
        /* Simulo que guardo en una db

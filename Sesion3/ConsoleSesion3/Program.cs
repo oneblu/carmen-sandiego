@@ -3,6 +3,12 @@
 using ConsoleSesion3;
 using ConsoleSesion3.ConceptoAbstract;
 using ConsoleSesion3.ConceptoInterfaces;
+using ConsoleSesion3.ConceptoInterfaces.Database;
+
+var cuadradohijo = new CuadradoVirtualHijo(4);
+
+cuadradohijo.MostrarInformacion();
+
 
 Console.WriteLine("=== DEMOSTRACIÓN DE POLIMORFISMO ===\n");
 
@@ -24,13 +30,13 @@ foreach (var figura in figuras)
 }
 
 Console.WriteLine($"\n=== CÁLCULO DEL ÁREA TOTAL ===");
-        
+
 double areaTotal = 0;
 foreach (var figura in figuras)
 {
     areaTotal += figura.CalcularArea();
 }
-        
+
 Console.WriteLine($"Área total de todas las figuras: {areaTotal:F2}");
 
 // Demostración adicional con métodos que aceptan la clase base
@@ -68,11 +74,13 @@ var proveedor = new Proveedor()
     Telefono = "45435345435"
 };
 
-var dbCliente = new DbContacto();
- var exitoCliente = dbCliente.CrearCliente(cliente);
- var exitoProveedor = dbCliente.CrearCliente(proveedor);
- 
-if (exitoCliente)
- {
-     Console.Write("Cliente guardado con exito!");
- }
+var contactos = new List<IContacto>
+{
+    cliente,
+    proveedor
+};
+
+foreach (var contacto in contactos)
+{
+    Console.WriteLine($"CONTACTO: {contacto.NombreCompleto()} TIPO: {contacto.GetType().Name}");
+}

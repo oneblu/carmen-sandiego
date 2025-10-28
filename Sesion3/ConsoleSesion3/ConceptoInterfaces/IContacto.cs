@@ -6,4 +6,6 @@ public interface IContacto
     string Apellido { get; set; }
     string Correo { get; set; }
     string Telefono { get; set; }
+
+    string NombreCompleto();
 }

@@ -46,7 +46,7 @@ var usuarioService = new UsuarioService(notificacionService);
 usuarioService.RegistrarUsuario("Ana García");
 
 /*
- * Responsabilidad Unica
+ * 4 Responsabilidad Unica
  */
 // Uso
 var usuarioServiceSrp = new ConsoleSesion3._4_Principio_Responsabilidad_Unica.Bien.UsuarioService();
