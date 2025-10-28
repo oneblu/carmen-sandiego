@@ -15,9 +15,14 @@ public class Curso
     public void MostrarInfo()
     {
         Console.WriteLine($"Curso: {Nombre} ({Codigo})");
+       
         if (Profesor != null)
         {
             Console.WriteLine($"Profesor: {Profesor.Nombre}");
+        }
+        else
+        {
+            Console.WriteLine($"Profesor: NO TIENE");
         }
     }
 }
