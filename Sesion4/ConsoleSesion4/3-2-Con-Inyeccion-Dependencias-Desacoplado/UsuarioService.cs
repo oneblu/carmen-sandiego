@@ -13,6 +13,6 @@ public class UsuarioService
     public void RegistrarUsuario(string nombre)
     {
         Console.WriteLine($"Registrando usuario: {nombre}");
-        _notificacionService.EnviarNotificacion($"Bienvenido {nombre}");
+        _notificacionService.EnviarNotificacion($"{nombre}");
     }
 }
