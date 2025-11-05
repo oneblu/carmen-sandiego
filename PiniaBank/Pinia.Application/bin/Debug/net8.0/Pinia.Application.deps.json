@@ -15,6 +15,14 @@
           "Pinia.Application.dll": {}
         }
       },
+      "Dapper/2.1.66": {
+        "runtime": {
+          "lib/net8.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.66.48463"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.4": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -33,6 +41,7 @@
       },
       "Pinia.Infraestructure/1.0.0": {
         "dependencies": {
+          "Dapper": "2.1.66",
           "Newtonsoft.Json": "13.0.4",
           "Pinia.Domain": "1.0.0"
         },
@@ -50,6 +59,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Dapper/2.1.66": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
+      "path": "dapper/2.1.66",
+      "hashPath": "dapper.2.1.66.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.4": {
       "type": "package",

@@ -1,11 +1,20 @@
-﻿namespace Pinia.Domain.Entidades;
+﻿using Newtonsoft.Json;
+
+namespace Pinia.Domain.Entidades;
 
 public sealed class Cliente
 {
+    [JsonProperty("id")]
     public int Id { get; set; }
+    
+    [JsonProperty("nombres")]
     public string Nombres { get; set; }
+    
+    [JsonProperty("apellidos")]
     public string Apellidos { get; set; }
-    public string NumeroIdentificacion { get; set; }
+    
+    [JsonProperty("numero_identificacion")]
+    public string? NumeroIdentificacion { get; set; }
     public DateTime FechaNacimiento { get; set; }
     public string Telefono { get; set; }
     public string Email { get; set; }

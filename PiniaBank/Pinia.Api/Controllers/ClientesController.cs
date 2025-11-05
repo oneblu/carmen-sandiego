@@ -19,16 +19,16 @@ public class ClientesController : ControllerBase
   private readonly ILogger<ClientesController> _logger;
 
     [HttpGet(Name = "ConsultarClientes")]
-    public IActionResult Get()
+    public async Task<IActionResult> Get()
     {
-        var clientes = _servicioCliente.ConsultarTodos();
+        var clientes =await _servicioCliente.ConsultarTodos();
         return Ok(clientes);
     }
     
     [HttpPost(Name = "CrearClientes")]
-    public IActionResult Crear(CrearClienteDto crearClienteDto)
+    public async Task<IActionResult> Crear(CrearClienteDto crearClienteDto)
     {
-        _servicioCliente.Crear(crearClienteDto);
-        return Ok();
+        var result =await _servicioCliente.Crear(crearClienteDto);
+        return Ok(result);
     }
 }

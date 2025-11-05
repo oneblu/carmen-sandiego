@@ -3,21 +3,23 @@ using Pinia.Domain.Interfaces.Repositorios;
 
 namespace Pinia.Infraestructure.Data;
 
-public class ClienteRepositorio:IClienteRepositorio
+public class ClienteRepositorio:Repository,IClienteRepositorio
 {
-    TursoClient _clientTurso;
-
-    public ClienteRepositorio()
+   
+    public async Task<int> Crear(Cliente cliente)
     {
-        _clientTurso = new TursoClient("libsql://pinia-cangulor8.aws-us-east-1.turso.io","eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3NjIzMDY2OTcsImlkIjoiYTc1YjhjNzItNjBhMC00YTE1LWFkNjAtNTZlZWY2ZWY4MGRkIiwicmlkIjoiNGM4ZWM2ZDQtNjc4Yi00MzZhLTk4M2QtNjE4NWFhMTNkMTFjIn0.ORfMlLRAi8_pTTh03lwSZOmfSe3LIcuHzyFiqVkPI5D1mcVmnu42XM4l_ztoOJLMzKoYDN6sgV_g2NBwPlzkAA");
-    }
+        var sql = @"INSERT INTO clientes (nombres, apellidos, numero_identificacion) 
+                VALUES ($nombres, $apellidos, $numero_identificacion)";
 
-    public void Crear(Cliente cliente)
-    {
-        var sql = $"INSERT INTO clientes(nombres, apellidos,numero_identificacion)" +
-                  $"VALUES" +
-                  $"('{cliente.Nombres}','{cliente.Apellidos}','{cliente.NumeroIdentificacion}');";
-        var result = _clientTurso.ExecuteQuery(sql);
+        var parameters = new Dictionary<string, object>
+        {
+            ["$nombres"] = cliente.Nombres,
+            ["$apellidos"] = cliente.Apellidos,
+            ["$numero_identificacion"] = cliente.NumeroIdentificacion,
+        };
+
+        var rowsAffected = await ExecuteAsync(sql, parameters);
+        return rowsAffected;
     }
 
     public void Actualizar(Cliente cliente)
@@ -30,11 +32,11 @@ public class ClienteRepositorio:IClienteRepositorio
         throw new NotImplementedException();
     }
 
-    public List<Cliente> ConsultarTodos()
+    public async Task<List<Cliente>> ConsultarTodos()
     {
-        string sql = "SELECT * FROM clientes;";
-        string result = _clientTurso.ExecuteQuery(sql);
+        const string sql = "SELECT * FROM clientes;";
+        var result =await QueryAsync<Cliente>(sql);
 
-        return new List<Cliente>();
+        return result;
     }
 }

@@ -10,7 +10,7 @@ public class ServicosCliente : IServicioCliente
 {
     private readonly IClienteRepositorio _clienteRepositorio = new ClienteRepositorio();
 
-    public void Crear(CrearClienteDto crearClienteDto)
+    public async Task<int> Crear(CrearClienteDto crearClienteDto)
     {
         var cliente = new Cliente()
         {
@@ -18,7 +18,8 @@ public class ServicosCliente : IServicioCliente
             Apellidos = crearClienteDto.Apellidos,
             NumeroIdentificacion = crearClienteDto.NumeroIdentificacion
         };
-        _clienteRepositorio.Crear(cliente);
+        var result = await _clienteRepositorio.Crear(cliente);
+        return result;
     }
 
     public void Actualizar(Cliente cliente)
@@ -31,9 +32,9 @@ public class ServicosCliente : IServicioCliente
         throw new NotImplementedException();
     }
 
-    public string ConsultarTodos()
+    public async Task<List<ClienteDto>> ConsultarTodos()
     {
-        var clientes = _clienteRepositorio.ConsultarTodos();
-        return clientes.ToString();
+        var clientes =await _clienteRepositorio.ConsultarTodos();
+        return clientes.Select(cliente => new ClienteDto { Nombres = cliente.Nombres, Apellidos = cliente.Apellidos, NumeroIdentificacion = cliente.NumeroIdentificacion }).ToList();
     }
 }

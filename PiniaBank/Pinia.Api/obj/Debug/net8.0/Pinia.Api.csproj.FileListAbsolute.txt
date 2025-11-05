@@ -38,3 +38,4 @@
 /Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Api/obj/Debug/net8.0/Pinia.Api.pdb
 /Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Api/obj/Debug/net8.0/Pinia.Api.genruntimeconfig.cache
 /Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Api/obj/Debug/net8.0/ref/Pinia.Api.dll
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Api/bin/Debug/net8.0/Dapper.dll

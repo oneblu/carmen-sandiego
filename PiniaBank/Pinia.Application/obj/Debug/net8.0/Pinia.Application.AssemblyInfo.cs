@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pinia.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+993201fe973ac21a86353e3458d3ef6fa25894fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65efaf84cd83c938bd21e92203f2d14925fc4350")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pinia.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pinia.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

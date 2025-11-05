@@ -4,9 +4,9 @@ namespace Pinia.Domain.Interfaces.Repositorios;
 
 public interface IClienteRepositorio
 {
-    void Crear(Cliente cliente);
+    Task<int> Crear(Cliente cliente);
     void Actualizar(Cliente cliente);
     void CambiarEstado(int idCLiente, bool estado);
     
-    List<Cliente> ConsultarTodos();
+    Task<List<Cliente>> ConsultarTodos();
 }

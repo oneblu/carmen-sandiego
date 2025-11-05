@@ -5,8 +5,8 @@ namespace Pinia.Application.Interfaces;
 
 public interface IServicioCliente
 {
-    void Crear(CrearClienteDto crearClienteDto);
+    Task<int> Crear(CrearClienteDto crearClienteDto);
     void Actualizar(Cliente cliente);
     void CambiarEstado(int idCLiente, bool estado);
-    string ConsultarTodos();
+    Task<List<ClienteDto>> ConsultarTodos();
 }
