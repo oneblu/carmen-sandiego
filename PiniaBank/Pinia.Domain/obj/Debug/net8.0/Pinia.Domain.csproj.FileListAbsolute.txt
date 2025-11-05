@@ -1,0 +1,12 @@
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/bin/Debug/net8.0/Pinia.Domain.deps.json
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/bin/Debug/net8.0/Pinia.Domain.dll
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/bin/Debug/net8.0/Pinia.Domain.pdb
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/Pinia.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/Pinia.Domain.AssemblyInfoInputs.cache
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/Pinia.Domain.AssemblyInfo.cs
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/Pinia.Domain.csproj.CoreCompileInputs.cache
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/Pinia.Domain.sourcelink.json
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/Pinia.Domain.dll
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/refint/Pinia.Domain.dll
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/Pinia.Domain.pdb
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/ref/Pinia.Domain.dll

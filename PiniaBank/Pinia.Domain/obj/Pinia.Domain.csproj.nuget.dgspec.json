@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {}
+    "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {}
   },
   "projects": {
-    "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {
+    "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj",
+        "projectUniqueName": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj",
         "projectName": "Pinia.Domain",
-        "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj",
-        "packagesPath": "/Users/cangulor/.nuget/packages/",
-        "outputPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/obj/",
+        "projectPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj",
+        "packagesPath": "/Users/carlosangulo/.nuget/packages/",
+        "outputPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/cangulor/.nuget/NuGet/NuGet.Config"
+          "/Users/carlosangulo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/cangulor/.dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

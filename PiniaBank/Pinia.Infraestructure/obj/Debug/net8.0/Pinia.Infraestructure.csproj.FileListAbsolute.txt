@@ -1,0 +1,16 @@
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/bin/Debug/net8.0/Pinia.Infraestructure.deps.json
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/bin/Debug/net8.0/Pinia.Infraestructure.dll
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/bin/Debug/net8.0/Pinia.Infraestructure.pdb
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/bin/Debug/net8.0/Pinia.Domain.dll
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/bin/Debug/net8.0/Pinia.Domain.pdb
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/Debug/net8.0/Pinia.Infraestructure.csproj.AssemblyReference.cache
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/Debug/net8.0/Pinia.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/Debug/net8.0/Pinia.Infraestructure.AssemblyInfoInputs.cache
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/Debug/net8.0/Pinia.Infraestructure.AssemblyInfo.cs
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/Debug/net8.0/Pinia.Infraestructure.csproj.CoreCompileInputs.cache
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/Debug/net8.0/Pinia.Infraestructure.sourcelink.json
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/Debug/net8.0/Pinia.In.5AA4A345.Up2Date
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/Debug/net8.0/Pinia.Infraestructure.dll
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/Debug/net8.0/refint/Pinia.Infraestructure.dll
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/Debug/net8.0/Pinia.Infraestructure.pdb
+/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/Debug/net8.0/ref/Pinia.Infraestructure.dll

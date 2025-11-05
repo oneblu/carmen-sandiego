@@ -1,0 +1,270 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Api/Pinia.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Api/Pinia.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Api/Pinia.Api.csproj",
+        "projectName": "Pinia.Api",
+        "projectPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Api/Pinia.Api.csproj",
+        "packagesPath": "/Users/carlosangulo/.nuget/packages/",
+        "outputPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/carlosangulo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Application/Pinia.Application.csproj": {
+                "projectPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Application/Pinia.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Application/Pinia.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Application/Pinia.Application.csproj",
+        "projectName": "Pinia.Application",
+        "projectPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Application/Pinia.Application.csproj",
+        "packagesPath": "/Users/carlosangulo/.nuget/packages/",
+        "outputPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/carlosangulo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {
+                "projectPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj"
+              },
+              "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/Pinia.Infraestructure.csproj": {
+                "projectPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/Pinia.Infraestructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj",
+        "projectName": "Pinia.Domain",
+        "projectPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj",
+        "packagesPath": "/Users/carlosangulo/.nuget/packages/",
+        "outputPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/carlosangulo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/Pinia.Infraestructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/Pinia.Infraestructure.csproj",
+        "projectName": "Pinia.Infraestructure",
+        "projectPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/Pinia.Infraestructure.csproj",
+        "packagesPath": "/Users/carlosangulo/.nuget/packages/",
+        "outputPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/carlosangulo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {
+                "projectPath": "/Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
