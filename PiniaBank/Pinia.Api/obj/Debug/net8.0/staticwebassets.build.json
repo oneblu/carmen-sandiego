@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "dKTVSQq5VVgEfwuPHVaS6KJcgdfUA5VJvinWFCNQwZE=",
-  "Source": "Pinia.Api",
-  "BasePath": "_content/Pinia.Api",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"xRUzX2dqWv6uYue98/g7+/pLpG3NUH357zOluhlsvPc=","Source":"Pinia.Api","BasePath":"_content/Pinia.Api","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

@@ -1,25 +1,27 @@
+using Npgsql;
 using Pinia.Domain.Entidades;
 using Pinia.Domain.Interfaces.Repositorios;
+using Pinia.Infraestructure.Data.Shared;
 
 namespace Pinia.Infraestructure.Data;
 
-public class ClienteRepositorio:Repository,IClienteRepositorio
+public class ClienteRepositorio : Repository, IClienteRepositorio
 {
-   
     public async Task<int> Crear(Cliente cliente)
     {
-        var sql = @"INSERT INTO clientes (nombres, apellidos, numero_identificacion) 
-                VALUES ($nombres, $apellidos, $numero_identificacion)";
+        var sql = "INSERT INTO clientes (nombres, apellidos, numero_identificacion) " +
+        "VALUES (@Nombres, @Apellidos, @NumeroIdentificacion)";
 
         var parameters = new Dictionary<string, object>
         {
-            ["$nombres"] = cliente.Nombres,
-            ["$apellidos"] = cliente.Apellidos,
-            ["$numero_identificacion"] = cliente.NumeroIdentificacion,
+            { "@Nombres", cliente.Nombres },
+            { "@Apellidos", cliente.Apellidos },
+            { "@NumeroIdentificacion", cliente.NumeroIdentificacion ?? (object)DBNull.Value }
         };
 
-        var rowsAffected = await ExecuteAsync(sql, parameters);
-        return rowsAffected;
+        var result = await ExecuteNonQueryAsync(sql, parameters);
+
+        return result;
     }
 
     public void Actualizar(Cliente cliente)
@@ -34,9 +36,33 @@ public class ClienteRepositorio:Repository,IClienteRepositorio
 
     public async Task<List<Cliente>> ConsultarTodos()
     {
-        const string sql = "SELECT * FROM clientes;";
-        var result =await QueryAsync<Cliente>(sql);
+        var listaClientes = new List<Cliente>();
+        using (var connection =await GetOpenConnectionAsync())
+        {
+            await using var cmd = new NpgsqlCommand("SELECT * FROM clientes", connection);
 
-        return result;
+            var reader = await cmd.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                var cliente = new Cliente
+                {
+                    Id = reader.GetInt32(0),
+                    Nombres = reader.GetString(1),
+                    Apellidos = reader.GetString(2),
+                    NumeroIdentificacion = reader.IsDBNull(3) ? null : reader.GetString(3),
+                    //FechaNacimiento = reader.GetDateTime(4),
+                    //Telefono = reader.GetString(5),
+                    //Email = reader.GetString(6),
+                    //Sexo = reader.GetChar(7),
+                    //Direccion = reader.GetString(8),
+                    //Ciudad = reader.GetString(9),
+                    //Estado = reader.GetBoolean(10)
+                };
+                listaClientes.Add(cliente);
+            }
+
+            return listaClientes;
+        }
     }
 }

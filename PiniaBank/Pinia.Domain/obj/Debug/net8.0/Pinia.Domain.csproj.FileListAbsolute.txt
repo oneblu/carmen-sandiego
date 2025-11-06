@@ -10,3 +10,16 @@
 /Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/refint/Pinia.Domain.dll
 /Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/Pinia.Domain.pdb
 /Users/carlosangulo/Projects/carmen-sandiego/PiniaBank/Pinia.Domain/obj/Debug/net8.0/ref/Pinia.Domain.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\bin\Debug\net8.0\Pinia.Domain.deps.json
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\bin\Debug\net8.0\Pinia.Domain.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\bin\Debug\net8.0\Pinia.Domain.pdb
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\obj\Debug\net8.0\Pinia.Domain.csproj.AssemblyReference.cache
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\obj\Debug\net8.0\Pinia.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\obj\Debug\net8.0\Pinia.Domain.AssemblyInfoInputs.cache
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\obj\Debug\net8.0\Pinia.Domain.AssemblyInfo.cs
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\obj\Debug\net8.0\Pinia.Domain.csproj.CoreCompileInputs.cache
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\obj\Debug\net8.0\Pinia.Domain.sourcelink.json
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\obj\Debug\net8.0\Pinia.Domain.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\obj\Debug\net8.0\refint\Pinia.Domain.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\obj\Debug\net8.0\Pinia.Domain.pdb
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Domain\obj\Debug\net8.0\ref\Pinia.Domain.dll

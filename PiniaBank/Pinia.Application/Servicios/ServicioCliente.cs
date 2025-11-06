@@ -35,6 +35,12 @@ public class ServicosCliente : IServicioCliente
     public async Task<List<ClienteDto>> ConsultarTodos()
     {
         var clientes =await _clienteRepositorio.ConsultarTodos();
-        return clientes.Select(cliente => new ClienteDto { Nombres = cliente.Nombres, Apellidos = cliente.Apellidos, NumeroIdentificacion = cliente.NumeroIdentificacion }).ToList();
+
+        return clientes.Select(cliente => new ClienteDto {
+            Id= cliente.Id, 
+            Nombres = cliente.Nombres, 
+            Apellidos = cliente.Apellidos, 
+            NumeroIdentificacion = cliente.NumeroIdentificacion 
+        }).ToList();
     }
 }
