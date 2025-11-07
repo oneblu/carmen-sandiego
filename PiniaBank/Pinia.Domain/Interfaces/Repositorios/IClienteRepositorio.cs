@@ -8,5 +8,5 @@ public interface IClienteRepositorio
     void Actualizar(Cliente cliente);
     void CambiarEstado(int idCLiente, bool estado);
     
-    Task<List<Cliente>> ConsultarTodos();
+    Task<IEnumerable<Cliente>> ConsultarTodos();
 }

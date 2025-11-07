@@ -85,3 +85,6 @@ D:\_projects\carmen-sandiego\PiniaBank\Pinia.Api\obj\Debug\net8.0\ref\Pinia.Api.
 D:\_projects\carmen-sandiego\PiniaBank\Pinia.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\_projects\carmen-sandiego\PiniaBank\Pinia.Api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\_projects\carmen-sandiego\PiniaBank\Pinia.Api\bin\Debug\net8.0\Npgsql.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Api\bin\Debug\net8.0\Dapper.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Api\bin\Debug\net8.0\Pinia.Shared.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Api\bin\Debug\net8.0\Pinia.Shared.pdb

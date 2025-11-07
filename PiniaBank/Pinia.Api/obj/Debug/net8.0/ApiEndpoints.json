@@ -28,6 +28,84 @@
     "EndpointName": "CrearClientes"
   },
   {
+    "ContainingType": "Pinia.Api.Controllers.CuentasController",
+    "Method": "Get",
+    "RelativePath": "Cuentas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "ConsultarCuentas"
+  },
+  {
+    "ContainingType": "Pinia.Api.Controllers.CuentasController",
+    "Method": "Crear",
+    "RelativePath": "Cuentas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "crearCuentaDto",
+        "Type": "Pinia.Application.Dtos.CrearCuentaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "CrearCuenta"
+  },
+  {
+    "ContainingType": "Pinia.Api.Controllers.CuentasController",
+    "Method": "ActualizarEstado",
+    "RelativePath": "Cuentas/{idCuenta}/actualizar-estado",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCuenta",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nuevoEstado",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "ActualizarEstadoCuenta"
+  },
+  {
+    "ContainingType": "Pinia.Api.Controllers.CuentasController",
+    "Method": "ActualizarEstado",
+    "RelativePath": "Cuentas/{idCuenta}/actualizar-saldo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCuenta",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nuevoMonto",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "ActualizarSaldoCuenta"
+  },
+  {
     "ContainingType": "Pinia.Api.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

@@ -1,11 +1,11 @@
 ﻿using Npgsql;
+using Dapper;
 
 namespace Pinia.Infraestructure.Data.Shared
 {
     public abstract class Repository
     {
         const string connectionString = "Server=ep-nameless-cell-a4p1pw8y-pooler.us-east-1.aws.neon.tech;Port=5432;Database=neondb;User Id=neondb_owner;Password=npg_KWRvybNDh1w8;";
-
         protected static async Task<NpgsqlConnection> GetOpenConnectionAsync()
         {
             var connection = new NpgsqlConnection(connectionString);
@@ -13,7 +13,7 @@ namespace Pinia.Infraestructure.Data.Shared
             return connection;
         }
 
-        protected async Task<int> ExecuteNonQueryAsync(string sql, Dictionary<string, object> parameter)
+        protected async Task<int> MyExecuteNonQueryAsync(string sql, Dictionary<string, object> parameter)
         {
             using (var connection = await GetOpenConnectionAsync())
             {
@@ -24,6 +24,16 @@ namespace Pinia.Infraestructure.Data.Shared
                     cmd.Parameters.AddWithValue(param.Key, param.Value);
                 }
                 var result = await cmd.ExecuteNonQueryAsync();
+
+                return result;
+            }
+        }
+
+        protected async Task<IEnumerable<T>> MyQueryAsync<T>(string sql, Dictionary<string, object>? parameters = null)
+        {
+            using (var connection = await GetOpenConnectionAsync())
+            {
+                var result = await connection.QueryAsync<T>(sql, parameters);
 
                 return result;
             }

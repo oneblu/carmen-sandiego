@@ -1,0 +1,12 @@
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\bin\Debug\net8.0\Pinia.Shared.deps.json
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\bin\Debug\net8.0\Pinia.Shared.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\bin\Debug\net8.0\Pinia.Shared.pdb
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\obj\Debug\net8.0\Pinia.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\obj\Debug\net8.0\Pinia.Shared.AssemblyInfoInputs.cache
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\obj\Debug\net8.0\Pinia.Shared.AssemblyInfo.cs
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\obj\Debug\net8.0\Pinia.Shared.csproj.CoreCompileInputs.cache
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\obj\Debug\net8.0\Pinia.Shared.sourcelink.json
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\obj\Debug\net8.0\Pinia.Shared.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\obj\Debug\net8.0\refint\Pinia.Shared.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\obj\Debug\net8.0\Pinia.Shared.pdb
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Shared\obj\Debug\net8.0\ref\Pinia.Shared.dll

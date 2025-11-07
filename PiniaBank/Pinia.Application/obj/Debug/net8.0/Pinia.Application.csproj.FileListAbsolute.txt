@@ -34,3 +34,5 @@ D:\_projects\carmen-sandiego\PiniaBank\Pinia.Application\obj\Debug\net8.0\Pinia.
 D:\_projects\carmen-sandiego\PiniaBank\Pinia.Application\obj\Debug\net8.0\refint\Pinia.Application.dll
 D:\_projects\carmen-sandiego\PiniaBank\Pinia.Application\obj\Debug\net8.0\Pinia.Application.pdb
 D:\_projects\carmen-sandiego\PiniaBank\Pinia.Application\obj\Debug\net8.0\ref\Pinia.Application.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Application\bin\Debug\net8.0\Pinia.Shared.dll
+D:\_projects\carmen-sandiego\PiniaBank\Pinia.Application\bin\Debug\net8.0\Pinia.Shared.pdb

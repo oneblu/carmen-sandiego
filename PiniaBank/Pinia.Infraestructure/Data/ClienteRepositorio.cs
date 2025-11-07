@@ -1,4 +1,3 @@
-using Npgsql;
 using Pinia.Domain.Entidades;
 using Pinia.Domain.Interfaces.Repositorios;
 using Pinia.Infraestructure.Data.Shared;
@@ -19,7 +18,7 @@ public class ClienteRepositorio : Repository, IClienteRepositorio
             { "@NumeroIdentificacion", cliente.NumeroIdentificacion ?? (object)DBNull.Value }
         };
 
-        var result = await ExecuteNonQueryAsync(sql, parameters);
+        var result = await MyExecuteNonQueryAsync(sql, parameters);
 
         return result;
     }
@@ -34,35 +33,10 @@ public class ClienteRepositorio : Repository, IClienteRepositorio
         throw new NotImplementedException();
     }
 
-    public async Task<List<Cliente>> ConsultarTodos()
+    public async Task<IEnumerable<Cliente>> ConsultarTodos()
     {
-        var listaClientes = new List<Cliente>();
-        using (var connection =await GetOpenConnectionAsync())
-        {
-            await using var cmd = new NpgsqlCommand("SELECT * FROM clientes", connection);
-
-            var reader = await cmd.ExecuteReaderAsync();
-
-            while (await reader.ReadAsync())
-            {
-                var cliente = new Cliente
-                {
-                    Id = reader.GetInt32(0),
-                    Nombres = reader.GetString(1),
-                    Apellidos = reader.GetString(2),
-                    NumeroIdentificacion = reader.IsDBNull(3) ? null : reader.GetString(3),
-                    //FechaNacimiento = reader.GetDateTime(4),
-                    //Telefono = reader.GetString(5),
-                    //Email = reader.GetString(6),
-                    //Sexo = reader.GetChar(7),
-                    //Direccion = reader.GetString(8),
-                    //Ciudad = reader.GetString(9),
-                    //Estado = reader.GetBoolean(10)
-                };
-                listaClientes.Add(cliente);
-            }
-
-            return listaClientes;
-        }
+        var sql = "SELECT * FROM clientes";
+        var clientes = await MyQueryAsync<Cliente>(sql);
+        return clientes;
     }
 }

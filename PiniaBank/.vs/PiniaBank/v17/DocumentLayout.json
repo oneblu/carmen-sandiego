@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\_projects\\carmen-sandiego\\PiniaBank\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71C7037A-770E-401F-9D06-8AACD705AB21}|Pinia.Infraestructure\\Pinia.Infraestructure.csproj|d:\\_projects\\carmen-sandiego\\piniabank\\pinia.infraestructure\\data\\shared\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C7037A-770E-401F-9D06-8AACD705AB21}|Pinia.Infraestructure\\Pinia.Infraestructure.csproj|solutionrelative:pinia.infraestructure\\data\\shared\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71C7037A-770E-401F-9D06-8AACD705AB21}|Pinia.Infraestructure\\Pinia.Infraestructure.csproj|d:\\_projects\\carmen-sandiego\\piniabank\\pinia.infraestructure\\data\\cuentarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C7037A-770E-401F-9D06-8AACD705AB21}|Pinia.Infraestructure\\Pinia.Infraestructure.csproj|solutionrelative:pinia.infraestructure\\data\\cuentarepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE609824-A858-4AAF-8DE8-9E058D95683B}|Pinia.Application\\Pinia.Application.csproj|d:\\_projects\\carmen-sandiego\\piniabank\\pinia.application\\dtos\\crearcuentadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE609824-A858-4AAF-8DE8-9E058D95683B}|Pinia.Application\\Pinia.Application.csproj|solutionrelative:pinia.application\\dtos\\crearcuentadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABAB0E77-5097-4846-B469-C6261E65C717}|Pinia.Api\\Pinia.Api.csproj|d:\\_projects\\carmen-sandiego\\piniabank\\pinia.api\\controllers\\cuentascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABAB0E77-5097-4846-B469-C6261E65C717}|Pinia.Api\\Pinia.Api.csproj|solutionrelative:pinia.api\\controllers\\cuentascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABAB0E77-5097-4846-B469-C6261E65C717}|Pinia.Api\\Pinia.Api.csproj|d:\\_projects\\carmen-sandiego\\piniabank\\pinia.api\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABAB0E77-5097-4846-B469-C6261E65C717}|Pinia.Api\\Pinia.Api.csproj|solutionrelative:pinia.api\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71C7037A-770E-401F-9D06-8AACD705AB21}|Pinia.Infraestructure\\Pinia.Infraestructure.csproj|d:\\_projects\\carmen-sandiego\\piniabank\\pinia.infraestructure\\data\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C7037A-770E-401F-9D06-8AACD705AB21}|Pinia.Infraestructure\\Pinia.Infraestructure.csproj|solutionrelative:pinia.infraestructure\\data\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE609824-A858-4AAF-8DE8-9E058D95683B}|Pinia.Application\\Pinia.Application.csproj|d:\\_projects\\carmen-sandiego\\piniabank\\pinia.application\\servicios\\serviciocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE609824-A858-4AAF-8DE8-9E058D95683B}|Pinia.Application\\Pinia.Application.csproj|solutionrelative:pinia.application\\servicios\\serviciocuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA9F042E-E6FA-4AFB-8807-E4E068EFD791}|Pinia.Domain\\Pinia.Domain.csproj|d:\\_projects\\carmen-sandiego\\piniabank\\pinia.domain\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA9F042E-E6FA-4AFB-8807-E4E068EFD791}|Pinia.Domain\\Pinia.Domain.csproj|solutionrelative:pinia.domain\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE609824-A858-4AAF-8DE8-9E058D95683B}|Pinia.Application\\Pinia.Application.csproj|d:\\_projects\\carmen-sandiego\\piniabank\\pinia.application\\servicios\\serviciocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE609824-A858-4AAF-8DE8-9E058D95683B}|Pinia.Application\\Pinia.Application.csproj|solutionrelative:pinia.application\\servicios\\serviciocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,53 +47,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Infraestructure\\Data\\Shared\\Repository.cs",
-              "RelativeDocumentMoniker": "Pinia.Infraestructure\\Data\\Shared\\Repository.cs",
-              "ToolTip": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Infraestructure\\Data\\Shared\\Repository.cs",
-              "RelativeToolTip": "Pinia.Infraestructure\\Data\\Shared\\Repository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAEAAAAAAAAAAAAAAA==",
+              "Title": "CuentaRepositorio.cs",
+              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Infraestructure\\Data\\CuentaRepositorio.cs",
+              "RelativeDocumentMoniker": "Pinia.Infraestructure\\Data\\CuentaRepositorio.cs",
+              "ToolTip": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Infraestructure\\Data\\CuentaRepositorio.cs",
+              "RelativeToolTip": "Pinia.Infraestructure\\Data\\CuentaRepositorio.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T01:23:56.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Domain\\Entidades\\Cliente.cs",
-              "RelativeDocumentMoniker": "Pinia.Domain\\Entidades\\Cliente.cs",
-              "ToolTip": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Domain\\Entidades\\Cliente.cs",
-              "RelativeToolTip": "Pinia.Domain\\Entidades\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T01:18:19.624Z",
+              "WhenOpened": "2025-11-07T01:36:42.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Api\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "Pinia.Api\\Controllers\\ClientesController.cs",
-              "ToolTip": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Api\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "Pinia.Api\\Controllers\\ClientesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Title": "CrearCuentaDto.cs",
+              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Application\\Dtos\\CrearCuentaDto.cs",
+              "RelativeDocumentMoniker": "Pinia.Application\\Dtos\\CrearCuentaDto.cs",
+              "ToolTip": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Application\\Dtos\\CrearCuentaDto.cs",
+              "RelativeToolTip": "Pinia.Application\\Dtos\\CrearCuentaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T00:36:52.623Z",
+              "WhenOpened": "2025-11-07T01:35:00.769Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ClienteRepositorio.cs",
-              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Infraestructure\\Data\\ClienteRepositorio.cs",
-              "RelativeDocumentMoniker": "Pinia.Infraestructure\\Data\\ClienteRepositorio.cs",
-              "ToolTip": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Infraestructure\\Data\\ClienteRepositorio.cs",
-              "RelativeToolTip": "Pinia.Infraestructure\\Data\\ClienteRepositorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAFAAAAAAAAAA==",
+              "Title": "CuentasController.cs",
+              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Api\\Controllers\\CuentasController.cs",
+              "RelativeDocumentMoniker": "Pinia.Api\\Controllers\\CuentasController.cs",
+              "ToolTip": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Api\\Controllers\\CuentasController.cs",
+              "RelativeToolTip": "Pinia.Api\\Controllers\\CuentasController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T00:28:18.132Z",
+              "WhenOpened": "2025-11-07T01:29:04.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Api\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Pinia.Api\\Controllers\\ClientesController.cs",
+              "ToolTip": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Api\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "Pinia.Api\\Controllers\\ClientesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T01:29:00.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServicioCuenta.cs",
+              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Application\\Servicios\\ServicioCuenta.cs",
+              "RelativeDocumentMoniker": "Pinia.Application\\Servicios\\ServicioCuenta.cs",
+              "ToolTip": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Application\\Servicios\\ServicioCuenta.cs",
+              "RelativeToolTip": "Pinia.Application\\Servicios\\ServicioCuenta.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T01:16:37.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServicioCliente.cs",
+              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Application\\Servicios\\ServicioCliente.cs",
+              "RelativeDocumentMoniker": "Pinia.Application\\Servicios\\ServicioCliente.cs",
+              "ToolTip": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Application\\Servicios\\ServicioCliente.cs",
+              "RelativeToolTip": "Pinia.Application\\Servicios\\ServicioCliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T01:16:34.373Z",
               "EditorCaption": ""
             }
           ]

@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Dapper/2.1.66": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
         "type": "package",
         "compile": {
@@ -83,6 +96,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Dapper": "2.1.66",
           "Npgsql": "9.0.4",
           "Pinia.Domain": "1.0.0"
         },
@@ -92,10 +106,39 @@
         "runtime": {
           "bin/placeholder/Pinia.Infraestructure.dll": {}
         }
+      },
+      "Pinia.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Pinia.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pinia.Shared.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Dapper/2.1.66": {
+      "sha512": "/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
+      "type": "package",
+      "path": "dapper/2.1.66",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.1.66.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net8.0/Dapper.dll",
+        "lib/net8.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
       "sha512": "3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg==",
       "type": "package",
@@ -257,12 +300,18 @@
       "type": "project",
       "path": "../Pinia.Infraestructure/Pinia.Infraestructure.csproj",
       "msbuildProject": "../Pinia.Infraestructure/Pinia.Infraestructure.csproj"
+    },
+    "Pinia.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Pinia.Shared/Pinia.Shared.csproj",
+      "msbuildProject": "../Pinia.Shared/Pinia.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Pinia.Domain >= 1.0.0",
-      "Pinia.Infraestructure >= 1.0.0"
+      "Pinia.Infraestructure >= 1.0.0",
+      "Pinia.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -303,6 +352,9 @@
             },
             "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Infraestructure\\Pinia.Infraestructure.csproj": {
               "projectPath": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Infraestructure\\Pinia.Infraestructure.csproj"
+            },
+            "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Shared\\Pinia.Shared.csproj": {
+              "projectPath": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Shared\\Pinia.Shared.csproj"
             }
           }
         }

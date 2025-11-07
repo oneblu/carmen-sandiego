@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinia.Api", "Pinia.Api\Pinia.Api.csproj", "{ABAB0E77-5097-4846-B469-C6261E65C717}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinia.Domain", "Pinia.Domain\Pinia.Domain.csproj", "{FA9F042E-E6FA-4AFB-8807-E4E068EFD791}"
@@ -7,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinia.Infraestructure", "Pinia.Infraestructure\Pinia.Infraestructure.csproj", "{71C7037A-770E-401F-9D06-8AACD705AB21}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinia.Application", "Pinia.Application\Pinia.Application.csproj", "{BE609824-A858-4AAF-8DE8-9E058D95683B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinia.Shared", "Pinia.Shared\Pinia.Shared.csproj", "{975E5C66-49A5-45C9-BE43-B3E221E5EDCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +35,12 @@ Global
 		{BE609824-A858-4AAF-8DE8-9E058D95683B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE609824-A858-4AAF-8DE8-9E058D95683B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE609824-A858-4AAF-8DE8-9E058D95683B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975E5C66-49A5-45C9-BE43-B3E221E5EDCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975E5C66-49A5-45C9-BE43-B3E221E5EDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975E5C66-49A5-45C9-BE43-B3E221E5EDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975E5C66-49A5-45C9-BE43-B3E221E5EDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
