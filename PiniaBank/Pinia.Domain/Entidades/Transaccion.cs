@@ -1,6 +1,6 @@
 namespace Pinia.Domain.Entidades;
 
-public class Transaccion
+public sealed class Transaccion
 {
     /// <summary>
     /// Llave primaria o identificador de la transaccion
@@ -10,13 +10,8 @@ public class Transaccion
     /// <summary>
     /// Valor de la transaccion
     /// </summary>
-    public double Monto { get; set; }
-    
-    /// <summary>
-    /// Identifico al cliente
-    /// </summary>
-    public int IdCliente { get; set; }
-    
+    public double Valor { get; set; }
+      
     /// <summary>
     /// Identifico la cuenta
     /// </summary>
@@ -27,5 +22,5 @@ public class Transaccion
     /// </summary>
     public string Tipo { get; set; }
     
-    public DateTime Fecha { get; set; }
+    public DateTime FechaDeCreacion { get; set; }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pinia.Infraestructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c82aa6dda2acd682ee53620f6f6687271e6b0894")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44ab37b7f318f7999d4b068ed545ab432dd16c0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pinia.Infraestructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pinia.Infraestructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

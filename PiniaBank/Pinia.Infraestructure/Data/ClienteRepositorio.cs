@@ -8,7 +8,7 @@ public class ClienteRepositorio : Repository, IClienteRepositorio
 {
     public async Task<int> Crear(Cliente cliente)
     {
-        var sql = "INSERT INTO clientes (nombres, apellidos, numero_identificacion) " +
+        var sql = "INSERT INTO carlos.clientes (nombres, apellidos, numero_identificacion) " +
         "VALUES (@Nombres, @Apellidos, @NumeroIdentificacion)";
 
         var parameters = new Dictionary<string, object>
@@ -35,7 +35,7 @@ public class ClienteRepositorio : Repository, IClienteRepositorio
 
     public async Task<IEnumerable<Cliente>> ConsultarTodos()
     {
-        var sql = "SELECT * FROM clientes";
+        var sql = "SELECT * FROM carlos.clientes";
         var clientes = await MyQueryAsync<Cliente>(sql);
         return clientes;
     }
