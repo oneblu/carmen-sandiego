@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Domain\\Pinia.Domain.csproj": {}
+    "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {}
   },
   "projects": {
-    "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Domain\\Pinia.Domain.csproj": {
+    "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Domain\\Pinia.Domain.csproj",
+        "projectUniqueName": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj",
         "projectName": "Pinia.Domain",
-        "projectPath": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Domain\\Pinia.Domain.csproj",
-        "packagesPath": "C:\\Users\\cangulor\\.nuget\\packages\\",
-        "outputPath": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Domain\\obj\\",
+        "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj",
+        "packagesPath": "/Users/cangulor/.nuget/packages/",
+        "outputPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\cangulor\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/cangulor/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -72,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/cangulor/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "V+ObIXNXJeU=",
+  "dgSpecHash": "y1YdQlxz1zc=",
   "success": true,
-  "projectFilePath": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Domain\\Pinia.Domain.csproj",
+  "projectFilePath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\cangulor\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
+    "/Users/cangulor/.nuget/packages/newtonsoft.json/13.0.4/newtonsoft.json.13.0.4.nupkg.sha512"
   ],
   "logs": []
 }

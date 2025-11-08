@@ -5,7 +5,7 @@ namespace Pinia.Infraestructure.Data.Shared
 {
     public abstract class Repository
     {
-        const string connectionString = "Server=ep-nameless-cell-a4p1pw8y-pooler.us-east-1.aws.neon.tech;Port=5432;Database=neondb;User Id=neondb_owner;Password=npg_KWRvybNDh1w8;";
+        const string connectionString = "pidan la cadena de conexion al correo: cangulor8@gmail.com";
         protected static async Task<NpgsqlConnection> GetOpenConnectionAsync()
         {
             var connection = new NpgsqlConnection(connectionString);
