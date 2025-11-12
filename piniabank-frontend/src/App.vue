@@ -1,7 +1,23 @@
 <template>
   <v-app id="inspire">
     <v-navigation-drawer v-model="drawer">
-      <!--  -->
+      <v-sheet class="pa-4" color="grey-lighten-4">
+        <v-avatar class="mb-4" color="grey-darken-1" size="64"></v-avatar>
+
+        <div>john@google.com</div>
+      </v-sheet>
+
+      <v-divider></v-divider>
+
+      <v-list>
+        <v-list-item
+          v-for="[icon, text] in links"
+          :key="icon"
+          :prepend-icon="icon"
+          :title="text"
+          link
+        ></v-list-item>
+      </v-list>
     </v-navigation-drawer>
 
     <v-app-bar>
@@ -11,21 +27,37 @@
     </v-app-bar>
 
     <v-main>
-      <v-container class="pa-4" fluid>
-      <RouterView />
-      </v-container>
+
+        <RouterView />
+
     </v-main>
   </v-app>
 </template>
 
 <script setup>
-  import { ref } from 'vue'
+import { ref } from 'vue'
 
-  const drawer = ref(null)
+const links = [
+  ['mdi-inbox-arrow-down', 'Inbox'],
+  ['mdi-send', 'Send'],
+  ['mdi-delete', 'Trash'],
+  ['mdi-alert-octagon', 'Spam'],
+]
+
+const drawer = ref(null)
 </script>
 
 <script>
-  export default {
-    data: () => ({ drawer: null }),
-  }
+export default {
+  data: () => ({
+    cards: ['Today', 'Yesterday'],
+    drawer: null,
+    links: [
+      ['mdi-inbox-arrow-down', 'Inbox'],
+      ['mdi-send', 'Send'],
+      ['mdi-delete', 'Trash'],
+      ['mdi-alert-octagon', 'Spam'],
+    ],
+  }),
+}
 </script>

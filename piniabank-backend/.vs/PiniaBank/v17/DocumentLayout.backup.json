@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\_projects\\carmen-sandiego\\PiniaBank\\",
+  "WorkspaceRootPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71C7037A-770E-401F-9D06-8AACD705AB21}|Pinia.Infraestructure\\Pinia.Infraestructure.csproj|d:\\_projects\\carmen-sandiego\\piniabank\\pinia.infraestructure\\data\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C7037A-770E-401F-9D06-8AACD705AB21}|Pinia.Infraestructure\\Pinia.Infraestructure.csproj|solutionrelative:pinia.infraestructure\\data\\clienterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ABAB0E77-5097-4846-B469-C6261E65C717}|Pinia.Api\\Pinia.Api.csproj|d:\\_projects\\carmen-sandiego\\piniabank-backend\\pinia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABAB0E77-5097-4846-B469-C6261E65C717}|Pinia.Api\\Pinia.Api.csproj|solutionrelative:pinia.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClienteRepositorio.cs",
-              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Infraestructure\\Data\\ClienteRepositorio.cs",
-              "RelativeDocumentMoniker": "Pinia.Infraestructure\\Data\\ClienteRepositorio.cs",
-              "ToolTip": "D:\\_projects\\carmen-sandiego\\PiniaBank\\Pinia.Infraestructure\\Data\\ClienteRepositorio.cs",
-              "RelativeToolTip": "Pinia.Infraestructure\\Data\\ClienteRepositorio.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAoAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Pinia.Api\\Program.cs",
+              "ToolTip": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Api\\Program.cs*",
+              "RelativeToolTip": "Pinia.Api\\Program.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T01:27:02.806Z",
+              "WhenOpened": "2025-11-12T00:53:15.624Z",
               "EditorCaption": ""
             }
           ]

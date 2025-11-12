@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Api/Pinia.Api.csproj": {}
+    "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Api\\Pinia.Api.csproj": {}
   },
   "projects": {
-    "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Api/Pinia.Api.csproj": {
+    "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Api\\Pinia.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Api/Pinia.Api.csproj",
+        "projectUniqueName": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Api\\Pinia.Api.csproj",
         "projectName": "Pinia.Api",
-        "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Api/Pinia.Api.csproj",
-        "packagesPath": "/Users/cangulor/.nuget/packages/",
-        "outputPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Api/obj/",
+        "projectPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Api\\Pinia.Api.csproj",
+        "packagesPath": "C:\\Users\\cangulor\\.nuget\\packages\\",
+        "outputPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/cangulor/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\cangulor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Application/Pinia.Application.csproj": {
-                "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Application/Pinia.Application.csproj"
+              "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Application\\Pinia.Application.csproj": {
+                "projectPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Application\\Pinia.Application.csproj"
               }
             }
           }
@@ -72,40 +79,47 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/cangulor/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Application/Pinia.Application.csproj": {
+    "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Application\\Pinia.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Application/Pinia.Application.csproj",
+        "projectUniqueName": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Application\\Pinia.Application.csproj",
         "projectName": "Pinia.Application",
-        "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Application/Pinia.Application.csproj",
-        "packagesPath": "/Users/cangulor/.nuget/packages/",
-        "outputPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Application/obj/",
+        "projectPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Application\\Pinia.Application.csproj",
+        "packagesPath": "C:\\Users\\cangulor\\.nuget\\packages\\",
+        "outputPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/cangulor/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\cangulor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {
-                "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj"
+              "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Domain\\Pinia.Domain.csproj": {
+                "projectPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Domain\\Pinia.Domain.csproj"
               },
-              "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Infraestructure/Pinia.Infraestructure.csproj": {
-                "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Infraestructure/Pinia.Infraestructure.csproj"
+              "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Infraestructure\\Pinia.Infraestructure.csproj": {
+                "projectPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Infraestructure\\Pinia.Infraestructure.csproj"
               },
-              "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Shared/Pinia.Shared.csproj": {
-                "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Shared/Pinia.Shared.csproj"
+              "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Shared\\Pinia.Shared.csproj": {
+                "projectPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Shared\\Pinia.Shared.csproj"
               }
             }
           }
@@ -141,26 +155,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/cangulor/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {
+    "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Domain\\Pinia.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj",
+        "projectUniqueName": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Domain\\Pinia.Domain.csproj",
         "projectName": "Pinia.Domain",
-        "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj",
-        "packagesPath": "/Users/cangulor/.nuget/packages/",
-        "outputPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/obj/",
+        "projectPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Domain\\Pinia.Domain.csproj",
+        "packagesPath": "C:\\Users\\cangulor\\.nuget\\packages\\",
+        "outputPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/cangulor/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\cangulor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -206,34 +227,41 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/cangulor/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Infraestructure/Pinia.Infraestructure.csproj": {
+    "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Infraestructure\\Pinia.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Infraestructure/Pinia.Infraestructure.csproj",
+        "projectUniqueName": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Infraestructure\\Pinia.Infraestructure.csproj",
         "projectName": "Pinia.Infraestructure",
-        "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Infraestructure/Pinia.Infraestructure.csproj",
-        "packagesPath": "/Users/cangulor/.nuget/packages/",
-        "outputPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Infraestructure/obj/",
+        "projectPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Infraestructure\\Pinia.Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\cangulor\\.nuget\\packages\\",
+        "outputPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/cangulor/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\cangulor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj": {
-                "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Domain/Pinia.Domain.csproj"
+              "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Domain\\Pinia.Domain.csproj": {
+                "projectPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Domain\\Pinia.Domain.csproj"
               }
             }
           }
@@ -279,26 +307,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/cangulor/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Shared/Pinia.Shared.csproj": {
+    "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Shared\\Pinia.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Shared/Pinia.Shared.csproj",
+        "projectUniqueName": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Shared\\Pinia.Shared.csproj",
         "projectName": "Pinia.Shared",
-        "projectPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Shared/Pinia.Shared.csproj",
-        "packagesPath": "/Users/cangulor/.nuget/packages/",
-        "outputPath": "/Users/cangulor/carmen-sandiego/PiniaBank/Pinia.Shared/obj/",
+        "projectPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Shared\\Pinia.Shared.csproj",
+        "packagesPath": "C:\\Users\\cangulor\\.nuget\\packages\\",
+        "outputPath": "D:\\_projects\\carmen-sandiego\\piniabank-backend\\Pinia.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/cangulor/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\cangulor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -338,7 +373,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/cangulor/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

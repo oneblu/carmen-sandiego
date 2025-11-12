@@ -5,7 +5,7 @@ namespace Pinia.Infraestructure.Data.Shared
 {
     public abstract class Repository
     {
-        const string connectionString = "pidan la cadena de conexion al correo: cangulor8@gmail.com";
+        const string connectionString = "";
         protected static async Task<NpgsqlConnection> GetOpenConnectionAsync()
         {
             var connection = new NpgsqlConnection(connectionString);
