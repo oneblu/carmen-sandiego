@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pinia.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06e46e73674bd15a77d5fe6e5e3612027b5dc306")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b633ff745b75a3fedb96000ff264d0762f7cf4f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pinia.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pinia.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
