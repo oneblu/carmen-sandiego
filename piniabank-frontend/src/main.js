@@ -1,34 +1,27 @@
-import './assets/main.css'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import Aura from '@primeuix/themes/aura';
+import PrimeVue from 'primevue/config';
+import ConfirmationService from 'primevue/confirmationservice';
+import ToastService from 'primevue/toastservice';
 
-// Vuetify
-import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
-import { aliases, mdi } from 'vuetify/iconsets/mdi'
-import '@mdi/font/css/materialdesignicons.css'
-import App from './App.vue'
+import '@/assets/tailwind.css';
+import '@/assets/styles.scss';
 
-const vuetify = createVuetify({
-  components,
-  directives,
-  icons: {
-    defaultSet: 'mdi',
-    aliases,
-    sets: {
-      mdi,
-    },
-  },
-})
+const app = createApp(App);
 
-import router from './router'
+app.use(router);
+app.use(PrimeVue, {
+  theme: {
+    preset: Aura,
+    options: {
+      darkModeSelector: '.app-dark'
+    }
+  }
+});
+app.use(ToastService);
+app.use(ConfirmationService);
 
-const app = createApp(App)
-
-app.use(createPinia())
-app.use(router)
-app.use(vuetify)
-app.mount('#app')
+app.mount('#app');

@@ -97,8 +97,6 @@ D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\bin\Debug\net8.0\Pinia.
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\bin\Debug\net8.0\Pinia.Api.dll
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\bin\Debug\net8.0\Pinia.Api.pdb
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\bin\Debug\net8.0\Dapper.dll
-D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\bin\Debug\net8.0\Npgsql.dll
@@ -130,10 +128,12 @@ D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\static
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\staticwebassets.build.json.cache
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\staticwebassets.development.json
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\Pinia.Api.csproj.Up2Date
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\Pinia.Api.dll
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\refint\Pinia.Api.dll
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\Pinia.Api.pdb
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\Pinia.Api.genruntimeconfig.cache
 D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\ref\Pinia.Api.dll
+D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\obj\Debug\net8.0\swae.build.ex.cache
+D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\_projects\carmen-sandiego\piniabank-backend\Pinia.Api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
