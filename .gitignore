@@ -1,1 +1,6 @@
 ﻿piniabank-backend/.vs
+piniabank-backend/Pinia.Api/obj
+piniabank-backend/Pinia.Application/obj
+piniabank-backend/Pinia.Shared/obj
+piniabank-backend/Pinia.Infraestructure/obj
+piniabank-backend/Pinia.Domain/obj
