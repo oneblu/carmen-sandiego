@@ -22,6 +22,7 @@ public class CuentasController : ControllerBase
     public async Task<IActionResult> Get(int idCliente)
     {
         var cuentas = await _servicioCuenta.ConsultarPorCliente(idCliente);
+        Thread.Sleep(3000);
         return Ok(cuentas);
     }
 
@@ -29,6 +30,7 @@ public class CuentasController : ControllerBase
     public async Task<IActionResult> Crear(CrearCuentaDto crearCuentaDto)
     {
         var result = await _servicioCuenta.Crear(crearCuentaDto);
+        Thread.Sleep(3000);
         return Ok(result);
     }
 

@@ -1,13 +1,29 @@
 <script setup>
+import router from '@/router';
+import { AccountService } from '@/service/AccountService';
 import { CustomerService } from '@/service/CustomerService';
 import { useToast } from 'primevue/usetoast';
 import { onMounted, ref } from 'vue';
+
 const clientes = ref();
 const cliente = ref({});
 const mostrarDialog = ref(false);
-const toast = useToast();
 
-const fecha = ref(null);
+const mostrarDialogCrearCuenta = ref(false);
+
+const tiposDeCuenta = ref([
+  { name: 'Ahorros', code: 'Ahorros' },
+  { name: 'Corriente', code: 'Corriente' }
+]);
+
+const loading = ref(false);
+
+const nuevaCuenta = ref({
+  tipo: '',
+  idCliente: ''
+});
+
+const toast = useToast();
 
 onMounted(() => {
   CustomerService.getData().then((data) => (clientes.value = data));
@@ -18,10 +34,6 @@ function openNew() {
   mostrarDialog.value = true;
 }
 
-function alerta(algo) {
-  alert(algo);
-}
-
 function guardar() {
   CustomerService.guardar(cliente.value);
   toast.add({ severity: 'success', summary: 'Successful', detail: 'Cliente Created', life: 3000 });
@@ -30,6 +42,57 @@ function guardar() {
 }
 function hideDialog() {
   mostrarDialog.value = false;
+}
+
+function mostrarFormCrearCuenta(idCliente) {
+  mostrarDialogCrearCuenta.value = true;
+  nuevaCuenta.value.idCliente = idCliente;
+}
+function cancelarCrearCuenta() {
+  mostrarDialogCrearCuenta.value = false;
+  nuevaCuenta.value.idCliente = '';
+  nuevaCuenta.value.tipo = '';
+}
+
+function verCuentas(idCliente) {
+  router.push({ path: `/cuentas/${idCliente}` });
+}
+
+/**
+ * Crea la cuenta al cliente
+ */
+async function guardarNuevaCuenta() {
+  loading.value = true; // 1. activar loading
+  try {
+    const res = await AccountService.guardar(nuevaCuenta.value);
+
+    if (!res.ok) throw new Error('Error al crear la cuenta'); // 2. validar respuesta
+
+    console.log('crear cuenta--->', res);
+    const numeroCuenta = await res.text();
+
+    toast.add({
+      // 3. notificar éxito
+      severity: 'success',
+      summary: 'Successful',
+      detail: 'La cuenta ha sido creada ' + numeroCuenta,
+      life: 5000
+    });
+    mostrarDialogCrearCuenta.value = false; // 4. cerrar modal
+    // 5. limpiar formulario
+    nuevaCuenta.value.idCliente = '';
+    nuevaCuenta.value.tipo = '';
+  } catch (err) {
+    toast.add({
+      // 6. notificar error
+      severity: 'error',
+      summary: 'Error',
+      detail: err.message || 'No se pudo crear la cuenta',
+      life: 3000
+    });
+  } finally {
+    loading.value = false; // 7. siempre apagar loading
+  }
 }
 </script>
 <template>
@@ -54,9 +117,19 @@ function hideDialog() {
       </template>
       <Column field="nombres" header="Nombres" sortable style="min-width: 12rem"></Column>
       <Column field="apellidos" header="Apellidos" sortable style="min-width: 16rem"></Column>
+      <Column>
+        <template #body="{ data }">
+          <Button label="Ver cuentas" icon="pi pi-eye" text @click="verCuentas(data.id)" rounded severity="info" />
+        </template>
+      </Column>
+      <Column>
+        <template #body="{ data }">
+          <Button label="Agregar cuenta" icon="pi pi-plus" text @click="mostrarFormCrearCuenta(data.id)" rounded severity="info" />
+        </template>
+      </Column>
     </DataTable>
 
-    <Dialog v-model:visible="mostrarDialog" :style="{ width: '450px' }" header="Product Details" :modal="true">
+    <Dialog v-model:visible="mostrarDialog" :style="{ width: '450px' }" header="Crear cliente" :modal="true">
       <div class="flex flex-col gap-6">
         <div>
           <label for="name" class="block font-bold mb-3">Nombres</label>
@@ -78,6 +151,20 @@ function hideDialog() {
       <template #footer>
         <Button label="Cancel" icon="pi pi-times" text @click="hideDialog" />
         <Button label="Save" icon="pi pi-check" @click="guardar" />
+      </template>
+    </Dialog>
+
+    <Dialog v-model:visible="mostrarDialogCrearCuenta" :style="{ width: '450px' }" header="Crear nueva cuenta" :modal="true">
+      <div class="flex flex-col gap-6">
+        <div>
+          <label for="name" class="block font-bold mb-3">Tipo de cuenta</label>
+          <Select fluid v-model="nuevaCuenta.tipo" :options="tiposDeCuenta" optionValue="code" optionLabel="name" placeholder="Selecciona el tipo de cuenta" class="w-full md:w-56" />
+        </div>
+      </div>
+
+      <template #footer>
+        <Button label="Cancelar" icon="pi pi-times" text @click="cancelarCrearCuenta" />
+        <Button label="Crear cuenta" icon="pi pi-check" :loading="loading" @click="guardarNuevaCuenta" />
       </template>
     </Dialog>
   </div>

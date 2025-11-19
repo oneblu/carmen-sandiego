@@ -8,7 +8,7 @@ namespace Pinia.Infraestructure.Data
     {
         public async Task<int> Crear(Cuenta cuenta)
         {
-            var sql = "INSERT INTO cuentas (numero, tipo, id_cliente) " +
+            var sql = "INSERT INTO public.cuentas (numero, tipo, id_cliente) " +
             "VALUES (@Numero, @Tipo, @IdCliente)";
 
             var parameters = new Dictionary<string, object>
@@ -52,7 +52,7 @@ namespace Pinia.Infraestructure.Data
         public async Task<IEnumerable<Cuenta>> ConsultarPorCliente(int idCliente)
         {
 
-            const string sql = "SELECT * FROM cuenta WHERE id_cliente = @IdCliente";
+            const string sql = "SELECT * FROM cuentas WHERE id_cliente = @IdCliente";
             var parameters = new Dictionary<string, object>
                 {
                     { "@IdCliente", idCliente }

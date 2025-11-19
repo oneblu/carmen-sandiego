@@ -11,16 +11,20 @@ public class ServicioCuenta : IServicioCuenta
 {
     private readonly ICuentaRepositorio _cuentaRepositorio = new CuentaRepositorio();
 
-    public async Task<int> Crear(CrearCuentaDto crearCuentaDto)
+    public async Task<long> Crear(CrearCuentaDto crearCuentaDto)
     {
-        var cliente = new Cuenta()
+        var cuenta = new Cuenta()
         {
             Numero = long.Parse(Utileria.GenerarNumeroCuenta()),
             Tipo = crearCuentaDto.Tipo,
             IdCliente = crearCuentaDto.IdCliente
         };
-        var result = await _cuentaRepositorio.Crear(cliente);
-        return result;
+        var result = await _cuentaRepositorio.Crear(cuenta);
+        
+        if (result == -1)
+            return -1;
+        
+        return cuenta.Numero;
     }
 
     public async Task<bool> ActualizarSaldo(int idCliente, decimal nuevoMonto)
@@ -45,7 +49,6 @@ public class ServicioCuenta : IServicioCuenta
             Saldo = cliente.Saldo,
             Estado = cliente.Estado,
             FechaCreacion = cliente.FechaCreacion,
-
         });
     }
 }
