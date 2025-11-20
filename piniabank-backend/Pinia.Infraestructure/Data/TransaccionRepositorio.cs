@@ -1,4 +1,5 @@
-﻿using Pinia.Domain.Entidades;
+﻿using Dapper;
+using Pinia.Domain.Entidades;
 using Pinia.Domain.Interfaces.Repositorios;
 using Pinia.Infraestructure.Data.Shared;
 
@@ -8,7 +9,7 @@ namespace Pinia.Infraestructure.Data
     {
         public async Task<bool> CancelarTransaccion(int id)
         {
-            const string sql = "UPDATE transacciones SET estado = false WHERE id = @Id";
+            const string sql = "UPDATE public.transacciones SET estado = false WHERE id = @Id";
             var parameters = new Dictionary<string, object>
             {
                 { "@Id", id }
@@ -17,7 +18,7 @@ namespace Pinia.Infraestructure.Data
             return result > 0;
         }
 
-        public Task<IEnumerable<Transaccion>> ConsultarPorCuentaAsync(int idCuenta)
+        public Task<IEnumerable<TransaccionBancaria>> ConsultarPorCuentaAsync(int idCuenta)
         {
             throw new NotImplementedException();
         }
@@ -27,9 +28,47 @@ namespace Pinia.Infraestructure.Data
             throw new NotImplementedException();
         }
 
-        public Task<int> CrearAsync(Transaccion transaccion)
+        public async Task<bool> CrearAsync(TransaccionBancaria newTtransaccion)
         {
-            throw new NotImplementedException();
+            using (var connection = await GetOpenConnectionAsync())
+            {
+                using (var transaction = await connection.BeginTransactionAsync())
+                {
+                    try
+                    {
+                        const string sql =
+                            "INSERT INTO public.transacciones (id_cuenta, valor, tipo) VALUES (@IdCuenta, @Valor, @Tipo)";
+                        var parameters = new Dictionary<string, object>
+                        {
+                            { "@IdCuenta", newTtransaccion.IdCuenta },
+                            { "@Valor", newTtransaccion.Valor },
+                            { "@Tipo", newTtransaccion.Tipo }
+                        };
+
+                        await connection.ExecuteAsync(sql, parameters, transaction);
+
+                        const string sqlActualizarSaldo =
+                            "UPDATE public.cuentas SET saldo = saldo + @Valor WHERE id = @IdCuenta";
+                        var parametersActualizarSaldo = new Dictionary<string, object>
+                        {
+                            { "@IdCuenta", newTtransaccion.IdCuenta },
+                            { "@Valor", newTtransaccion.Valor }
+                        };
+
+                        await connection.ExecuteAsync(sqlActualizarSaldo, parametersActualizarSaldo, transaction);
+
+                        transaction.Commit();
+
+                        return true;
+                    }
+                    catch (Exception e)
+                    {
+                        transaction.Rollback();
+                        Console.WriteLine(e);
+                        throw;
+                    }
+                }
+            }
         }
     }
 }

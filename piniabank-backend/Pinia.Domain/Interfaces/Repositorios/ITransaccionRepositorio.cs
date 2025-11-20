@@ -5,8 +5,8 @@ namespace Pinia.Domain.Interfaces.Repositorios
 {
     public interface ITransaccionRepositorio
     {
-        Task<int> CrearAsync(Transaccion transaccion);
-        Task<IEnumerable<Transaccion>> ConsultarPorCuentaAsync(int idCuenta);
+        Task<bool> CrearAsync(TransaccionBancaria transaccionBancaria);
+        Task<IEnumerable<TransaccionBancaria>> ConsultarPorCuentaAsync(int idCuenta);
 
         Task<double> ConsultarSaldoPorCuentaAsync(int idCuenta);
 

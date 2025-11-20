@@ -10,10 +10,12 @@ namespace Pinia.Api.Controllers;
 public class CuentasController : ControllerBase
 {
     IServicioCuenta _servicioCuenta;
+    IServicioTransaccion _servicioTransaccion;
 
     public CuentasController()
     {
         _servicioCuenta = new ServicioCuenta();
+        _servicioTransaccion= new ServicioTransaccion();
     }
 
     private readonly ILogger<ClientesController> _logger;
@@ -22,7 +24,7 @@ public class CuentasController : ControllerBase
     public async Task<IActionResult> Get(int idCliente)
     {
         var cuentas = await _servicioCuenta.ConsultarPorCliente(idCliente);
-        Thread.Sleep(3000);
+      
         return Ok(cuentas);
     }
 
@@ -30,10 +32,17 @@ public class CuentasController : ControllerBase
     public async Task<IActionResult> Crear(CrearCuentaDto crearCuentaDto)
     {
         var result = await _servicioCuenta.Crear(crearCuentaDto);
-        Thread.Sleep(3000);
+      
         return Ok(result);
     }
 
+    [HttpPost("transacciones",Name = "CrearTransaccion")]
+    public async Task<IActionResult> CrearTransaccion(CrearTransaccionDto crearTransaccionDto)
+    {
+        var result = await _servicioTransaccion.CrearAsync(crearTransaccionDto);
+      
+        return Ok(result);
+    }
 
     [HttpPut("{idCuenta}/actualizar-estado",Name = "ActualizarEstadoCuenta")]
     public async Task<IActionResult> ActualizarEstado(int idCuenta, bool nuevoEstado)

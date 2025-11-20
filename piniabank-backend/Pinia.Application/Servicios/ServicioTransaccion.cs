@@ -1,5 +1,6 @@
 ﻿using Pinia.Application.Dtos;
 using Pinia.Application.Interfaces;
+using Pinia.Domain.Entidades;
 using Pinia.Domain.Interfaces.Repositorios;
 using Pinia.Infraestructure.Data;
 
@@ -23,9 +24,21 @@ namespace Pinia.Application.Servicios
             throw new NotImplementedException();
         }
 
-        public Task<int> CrearAsync(CrearTransaccionDto transaccionDto)
+        public async Task<bool> CrearAsync(CrearTransaccionDto transaccionDto)
         {
-            throw new NotImplementedException();
+            if (transaccionDto.Valor <= 0)
+            {
+                throw new ArgumentException("Valor incorrecto");
+            }
+
+            var transaccion = new TransaccionBancaria
+            {
+                IdCuenta = transaccionDto.IdCuenta,
+                Valor = transaccionDto.Valor,
+                Tipo = transaccionDto.Tipo
+            };
+
+            return await _transaccionRepositorio.CrearAsync(transaccion);
         }
     }
 }

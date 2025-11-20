@@ -1,6 +1,6 @@
 namespace Pinia.Domain.Entidades;
 
-public sealed class Transaccion
+public sealed class TransaccionBancaria
 {
     /// <summary>
     /// Llave primaria o identificador de la transaccion

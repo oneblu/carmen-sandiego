@@ -25,9 +25,29 @@ const nuevaCuenta = ref({
 
 const toast = useToast();
 
-onMounted(() => {
-  CustomerService.getData().then((data) => (clientes.value = data));
+onMounted(async () => {
+  await consultarClientes();
 });
+
+async function consultarClientes() {
+  loading.value = true; // 1. activar loading
+  try {
+    const res = await CustomerService.consultarClientes();
+    console.log('res-->', res);
+    if (!res.ok) throw new Error('Error consultando los clientes'); // 2. validar respuesta
+    clientes.value = await res.json();
+  } catch (err) {
+    toast.add({
+      // 6. notificar error
+      severity: 'error',
+      summary: 'Error',
+      detail: err.message || 'No se pudo crear la cuenta',
+      life: 3000
+    });
+  } finally {
+    loading.value = false; // 7. siempre apagar loading
+  }
+}
 
 function openNew() {
   cliente.value = {};
@@ -106,6 +126,7 @@ async function guardarNuevaCuenta() {
       :value="clientes"
       :paginator="true"
       :rows="10"
+      :loading="loading"
       paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
       :rowsPerPageOptions="[5, 10, 25]"
       currentPageReportTemplate="Mostrando {first} a {last} of {totalRecords} clientes"

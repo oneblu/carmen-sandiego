@@ -1,6 +1,6 @@
 export const CustomerService = {
-  getData() {
-    return fetch('https://localhost:44308/Clientes').then((res) => res.json());
+  consultarClientes() {
+    return fetch('https://localhost:44308/Clientes');
   },
 
   guardar(cliente) {

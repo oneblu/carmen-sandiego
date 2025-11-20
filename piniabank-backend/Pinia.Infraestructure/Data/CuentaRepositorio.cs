@@ -25,7 +25,7 @@ namespace Pinia.Infraestructure.Data
 
         public async Task<bool> ActualizarSaldo(int id, decimal nuevoMonto)
         {
-            var sql = "UPDATE cuentas SET saldo = saldo + @NuevoMonto WHERE id = @Id";
+            var sql = "UPDATE public.cuentas SET saldo = saldo + @NuevoMonto WHERE id = @Id";
             var parameters = new Dictionary<string, object> {
                 { "@Id", id },
                 { "@NuevoMonto", nuevoMonto }
@@ -38,7 +38,7 @@ namespace Pinia.Infraestructure.Data
 
         public async Task<bool> CambiarEstado(int id, bool estado)
         {
-            var sql = "UPDATE cuentas SET estado = @Estado WHERE id = @Id";
+            var sql = "UPDATE public.cuentas SET estado = @Estado WHERE id = @Id";
             var parameters = new Dictionary<string, object> {
                 { "@Id", id },
                 { "@Estado", estado }
@@ -52,7 +52,7 @@ namespace Pinia.Infraestructure.Data
         public async Task<IEnumerable<Cuenta>> ConsultarPorCliente(int idCliente)
         {
 
-            const string sql = "SELECT * FROM cuentas WHERE id_cliente = @IdCliente";
+            const string sql = "SELECT * FROM public.cuentas WHERE id_cliente = @IdCliente";
             var parameters = new Dictionary<string, object>
                 {
                     { "@IdCliente", idCliente }
