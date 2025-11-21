@@ -24,4 +24,11 @@ public class TransaccionesController : ControllerBase
         var resultado = await _servicioTransaccion.CancelarTransaccion(id);
         return Ok(resultado);
     }
+    
+    [HttpGet("cuenta",Name = "ConsultarTransacciones")]
+    public async Task<IActionResult> GetByCuenta(int idCuenta)
+    {
+        var resultado = await _servicioTransaccion.ConsultarPorCuentaAsync(idCuenta);
+        return Ok(resultado);
+    }
 }

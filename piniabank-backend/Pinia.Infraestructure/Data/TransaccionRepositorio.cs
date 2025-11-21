@@ -18,9 +18,16 @@ namespace Pinia.Infraestructure.Data
             return result > 0;
         }
 
-        public Task<IEnumerable<TransaccionBancaria>> ConsultarPorCuentaAsync(int idCuenta)
+        public async Task<IEnumerable<TransaccionBancaria>> ConsultarPorCuentaAsync(int idCuenta)
         {
-            throw new NotImplementedException();
+            const string sql = "SELECT id, valor, id_cuenta AS idCuenta, fecha_de_creacion AS fechaDeCreacion, estado, tipo " +
+                               "FROM public.transacciones WHERE id_cuenta = @IdCuenta";
+            var parameters = new Dictionary<string, object>
+            {
+                { "@IdCuenta", idCuenta }
+            };
+            var result = await MyQueryAsync<TransaccionBancaria>(sql, parameters);
+            return result;
         }
 
         public Task<double> ConsultarSaldoPorCuentaAsync(int idCuenta)
@@ -41,7 +48,7 @@ namespace Pinia.Infraestructure.Data
                         var parameters = new Dictionary<string, object>
                         {
                             { "@IdCuenta", newTtransaccion.IdCuenta },
-                            { "@Valor", newTtransaccion.Valor },
+                            { "@Valor",Math.Abs(newTtransaccion.Valor) },
                             { "@Tipo", newTtransaccion.Tipo }
                         };
 

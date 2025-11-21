@@ -22,5 +22,7 @@ public sealed class TransaccionBancaria
     /// </summary>
     public string Tipo { get; set; }
     
+    public bool Estado { get; set; }
+    
     public DateTime FechaDeCreacion { get; set; }
 }

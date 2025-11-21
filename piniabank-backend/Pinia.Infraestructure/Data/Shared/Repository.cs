@@ -5,7 +5,8 @@ namespace Pinia.Infraestructure.Data.Shared
 {
     public abstract class Repository
     {
-        const string connectionString = "Server=ep-nameless-cell-a4p1pw8y-pooler.us-east-1.aws.neon.tech;Port=5432;Database=neondb;User Id=neondb_owner;Password=npg_rIHw3gVjMta9;";
+        private static readonly string connectionString = Environment.GetEnvironmentVariable("PINIA_BANK");
+
         protected static async Task<NpgsqlConnection> GetOpenConnectionAsync()
         {
             var connection = new NpgsqlConnection(connectionString);

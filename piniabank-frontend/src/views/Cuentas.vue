@@ -113,7 +113,14 @@ function moneda(valor) {
           <h4 class="m-0">Cuentas del cliente</h4>
         </div>
       </template>
-      <Column field="numero" header="Número" sortable style="min-width: 12rem"></Column>
+      <Column>
+        <template #body="{ data }">
+          <Button asChild v-slot="slotProps" variant="link">
+            <RouterLink :to="`/transacciones/${data.id}`" :class="slotProps.class">{{ data.numero }}</RouterLink>
+          </Button>
+        </template>
+      </Column>
+
       <Column field="tipo" header="Tipo" sortable style="min-width: 16rem"></Column>
       <Column field="saldo" header="Saldo" sortable style="min-width: 16rem">
         <template #body="{ data }">

@@ -24,6 +24,11 @@ const router = createRouter({
           component: () => import('@/views/Cuentas.vue')
         },
         {
+          path: '/transacciones/:idCuenta',
+          name: 'transacciones',
+          component: () => import('@/views/Transacciones.vue')
+        },
+        {
           path: '/uikit/formlayout',
           name: 'formlayout',
           component: () => import('@/views/uikit/FormLayout.vue')

@@ -1,11 +1,12 @@
 ﻿using Pinia.Application.Dtos;
+using Pinia.Domain.Entidades;
 
 namespace Pinia.Application.Interfaces
 {
     public interface IServicioTransaccion
     {
         Task<bool> CrearAsync(CrearTransaccionDto transaccionDto);
-        Task<IEnumerable<TransaccionDto>> ConsultarPorCuentaAsync(int idCuenta);
+        Task<IEnumerable<TransaccionBancaria>> ConsultarPorCuentaAsync(int idCuenta);
 
         Task<double> ConsultarSaldoPorCuentaAsync(int idCuenta);
 

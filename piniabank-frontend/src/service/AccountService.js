@@ -20,5 +20,9 @@ export const AccountService = {
       },
       body: JSON.stringify(transaccion)
     });
+  },
+
+  consultarTransacciones(idCuenta) {
+    return fetch('https://localhost:44308/Transacciones/cuenta?idCuenta=' + idCuenta);
   }
 };

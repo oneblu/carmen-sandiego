@@ -9,14 +9,15 @@ namespace Pinia.Application.Servicios
     public sealed class ServicioTransaccion : IServicioTransaccion
     {
         private readonly ITransaccionRepositorio _transaccionRepositorio = new TransaccionRepositorio();
+
         public async Task<bool> CancelarTransaccion(int id)
         {
             return await _transaccionRepositorio.CancelarTransaccion(id);
         }
 
-        public Task<IEnumerable<TransaccionDto>> ConsultarPorCuentaAsync(int idCuenta)
+        public async Task<IEnumerable<TransaccionBancaria>> ConsultarPorCuentaAsync(int idCuenta)
         {
-            throw new NotImplementedException();
+            return await _transaccionRepositorio.ConsultarPorCuentaAsync(idCuenta);
         }
 
         public Task<double> ConsultarSaldoPorCuentaAsync(int idCuenta)
@@ -34,7 +35,7 @@ namespace Pinia.Application.Servicios
             var transaccion = new TransaccionBancaria
             {
                 IdCuenta = transaccionDto.IdCuenta,
-                Valor = transaccionDto.Valor,
+                Valor = transaccionDto.Tipo == "Retiro" ? transaccionDto.Valor * -1 : transaccionDto.Valor,
                 Tipo = transaccionDto.Tipo
             };
 
